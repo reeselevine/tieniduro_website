@@ -1,0 +1,35 @@
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #000040;
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    border: 0px;
+}
+
+.navbar .nav > li > a {
+    color: white;
+}
+
+.navbar .nav > li > a:hover {
+    background-color: #000040;
+    color: yellow;
+}
+
+.dropdown-menu {
+    background-color: #000040;
+}
+
+.dropdown-menu > li > a {
+    color: white;
+}
+
+.dropdown-menu > li > a:hover {
+    color: yellow;
+    background-color: #000040;
+}

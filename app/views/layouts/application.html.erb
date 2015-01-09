@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tieni Duro Junior Cycling</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag "navbar" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#"><%= image_tag "tdlogo.jpg" %></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">HOME</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">OVERVIEW</a></li>
+                <li class="divider"></li>
+                <li><a href="#">PHILOSOPHY</a></li>
+                <li><a href="#">MISSION</a></li>
+                <li><a href="#">DEVELOPMENT</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">TEAM<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">RIDERS</a></li>
+                <li><a href="#">STAFF</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">EVENTS</a>
+            </li>
+            <li>
+              <a href="#">PHOTOS</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESULTS<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">2014</a></li>
+                <li><a href="#">PAST SEASONS</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">SPONSORS</a>
+            </li>
+            <li>
+              <a href="#">CONTACT / JOIN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <%= yield %>
+    
+    <!-- Placed at the end of the document so the pages load faster -->
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <%= javascript_include_tag "custom" %>
+    <%= javascript_include_tag "docs.min" %>
+  </body>
+</html>
